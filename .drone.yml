@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: trigger  
+  image: alpine
+  commands:
+  - echo "hello"
