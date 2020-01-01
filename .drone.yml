@@ -8,4 +8,4 @@ steps:
   - echo "hello"
   - ls
   - pwd
-  echo "world"
+  - echo "world"
