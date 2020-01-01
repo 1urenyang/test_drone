@@ -9,7 +9,8 @@ steps:
     A_SECRET:
       from_secret: secret_a
   commands:
-  - echo $A_SECRET
+  - echo $A_SECRET > secret.txt
+  - cat secret.txt
   - ls
   - pwd
   - echo "world"
