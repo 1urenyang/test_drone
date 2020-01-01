@@ -1,12 +1,15 @@
 kind: pipeline
 name: default
-type: exec
+type: docker
 
 steps:
 - name: trigger  
-  # image: alpine
+  image: alpine
+  environment:
+    A_SECRET:
+      from_secret: secret_a
   commands:
-  - echo "hello"
+  - echo $A_SECRET
   - ls
   - pwd
   - echo "world"
