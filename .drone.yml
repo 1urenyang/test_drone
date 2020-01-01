@@ -9,4 +9,3 @@ steps:
   - ls
   - pwd
   - echo "world"
-  - echo "python"
