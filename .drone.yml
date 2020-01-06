@@ -14,3 +14,4 @@ steps:
   - ls
   - pwd
   - echo "world"
+  - echo "0106"
