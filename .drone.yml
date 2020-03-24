@@ -21,7 +21,7 @@ steps:
     host: smtp.exmail.qq.com
     port: 465
     username: lurenyang
-    password: PARMSWQ3EhPkGTij
+#     password: PARMSWQ3EhPkGTij
     from: lurenyang@lurenyang.com
     recipients: [2415762716@qq.com]
     subject: >
@@ -29,6 +29,8 @@ steps:
     body: >
       http://www.baidu.com
     recipients: [2415762716@qq.com]
+    password:
+      from_secret: email_password
 #     skip_verify: true
 #   secrets: [email_password]
   when:
