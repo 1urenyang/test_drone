@@ -21,15 +21,12 @@ steps:
     host: smtp.exmail.qq.com
     port: 25
     username: lurenyang
-    password: $EMAIL_PASSWORD
     from: lurenyang@lurenyang.com
     recipients: [2415762716@qq.com]
     subject: "来自Drone的测试"
     body: "略略略"
     recipients: [2415762716@qq.com]
-  environment:
-    $EMAIL_PASSWOED:
-      from_secret: email_password
+  secrets: [email_password]
   when:
       branch:
       - master
