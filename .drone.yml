@@ -17,7 +17,7 @@ steps:
   - echo "0106"
 - name: notify
   image: drillster/drone-email
-  host: smtp.some-server.com
+  host: smtp.exmail.qq.com
   username: lurenyang
   password: $EMAIL_PASSWORD
   from: lurenyang@lurenyang.com
