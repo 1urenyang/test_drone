@@ -19,7 +19,7 @@ steps:
   image: drillster/drone-email
   settings:
     host: smtp.exmail.qq.com
-    port: 25
+    port: 465
     username: lurenyang
     from: lurenyang@lurenyang.com
     recipients: [2415762716@qq.com]
