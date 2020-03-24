@@ -29,7 +29,7 @@ steps:
     body: >
       http://www.baidu.com
     recipients: [2415762716@qq.com]
-    skip_verify: true
+#     skip_verify: true
 #   secrets: [email_password]
   when:
       branch:
