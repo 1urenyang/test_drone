@@ -18,10 +18,10 @@ steps:
 - name: notify
   image: drillster/drone-email
   host: smtp.exmail.qq.com
+  port: 25
   username: lurenyang
   password: $EMAIL_PASSWORD
   from: lurenyang@lurenyang.com
-  port: 25
   recipients: [2415762716@qq.com]
   subject: "来自Drone的测试"
   body: "略略略"
