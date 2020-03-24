@@ -3,7 +3,7 @@ name: default
 type: docker
 
 steps:
-- name: trigger  
+- name: trigger
   image: alpine
   environment:
     A_SECRET:
@@ -15,7 +15,7 @@ steps:
   - pwd
   - echo "world"
   - echo "0106"
-- name notify
+- name: notify
   image: drillster/drone-email
   host: smtp.some-server.com
   username: lurenyang
@@ -33,4 +33,3 @@ steps:
       - master
       event:
       - push
-     
