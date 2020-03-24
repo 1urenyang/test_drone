@@ -24,8 +24,10 @@ steps:
     password: PARMSWQ3EhPkGTij
     from: lurenyang@lurenyang.com
     recipients: [2415762716@qq.com]
-    subject: "来自Drone的测试"
-    body: "略略略"
+    subject: >
+      [{{ build.status }}]
+    body: >
+      http://www.baidu.com
     recipients: [2415762716@qq.com]
     skip_verify: true
 #   secrets: [email_password]
